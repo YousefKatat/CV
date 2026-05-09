@@ -5,162 +5,140 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yousef Katat</title>
+  <title>Yousef Katat - IT Support Specialist</title>
   <!-- include CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* لمسات CSS مخصصة لتحسين المظهر */
+    body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .card { border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid #1B263B; margin-bottom: 20px; }
+    .card-title a { text-decoration: none; font-weight: bold; color: #1B263B !important; }
+    .list-group-item { border: none; padding-left: 0; position: relative; padding-left: 20px; }
+    .list-group-item::before { content: "▹"; position: absolute; left: 0; color: #415A77; font-weight: bold; }
+    .section-title { border-bottom: 2px solid #1B263B; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; color: #1B263B; }
+    .navbar { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .img-thumbnail { border: 4px solid #415A77; width: 150px; height: 150px; object-fit: cover; }
+  </style>
 </head>
 
 <body id="page-top">
-  <div class="navbar fixed-top navbar-expand text-bg-light navbar-dark">
-    <h4>
-      <p class="nav"><a class="nav-link text-primary" href="#page-top">Yousef Katat</a></p>
-    </h4>
-    <ul class="nav justify-content-center">
-      <li class="nav-item"><a class="nav-link text-dark" href="#werkervaring">Werkervaring</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#opleidingen">Opleidingen</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#profiel">Profiel</a></li>
-      <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact informatie</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <div class="card-body text-white">
-      <h5 class="card-title">Title</h5>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#page-top">Yousef Katat</a>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link text-dark" href="#werkervaring">Werkervaring</a>
+        <a class="nav-link text-dark" href="#opleidingen">Opleidingen</a>
+        <a class="nav-link text-dark" href="#profiel">Profiel</a>
+        <a class="nav-link text-dark" href="#contact">Contact</a>
+      </div>
     </div>
-  </div>
+  </nav>
 
-  <header class="masthead text-white text-center py-3" style="background-color: #1B263B;">
-    <div class="container d-flex align-items-center flex-column">
-      <br><img src="img/YK.png" class="img-thumbnail mx-auto d-block rounded-circle"><br>
-      <h4>IT Support Specialist</h4><br>
+  <!-- Header Section -->
+  <header class="masthead text-white text-center py-5" style="background: linear-gradient(135deg, #1B263B 0%, #415A77 100%);">
+    <div class="container">
+      <img src="img/YK.png" class="img-thumbnail rounded-circle mb-3 shadow">
+      <h1 class="display-5 fw-bold">IT Support Specialist</h1>
+      <p class="lead">System Administration | Network Support | Web Development</p>
     </div>
   </header>
 
-  <div class="py-3 px-3" id="werkervaring">
-    <h1>Werkervaring</h1>
-  </div>
-
-  <div class="card-group">
-    <div class="card" style="background-color: #E0E1DD;">
-      <div class="card-body">
-        <h5 class="card-title py-2 px-2"><a href="https://be.hama.com/het-bedrijf" target="_blank"
-            style="color: #3A3B3C;">IT & Technical support (Hama Benelux - jan. 2023 - feb. 2023)</a></h5>
-        <ul class="list-group">
-          <li class="list-group-item">Nieuwe computers installeren en configureren.</li>
-          <li class="list-group-item">Nieuwe gebruikers aanmaken in het systeem.</li>
-          <li class="list-group-item">Identificeren van orders die niet kunnen verwerkt worden en achterhalen van de oorzaak en oplossen.</li>
-          <li class="list-group-item">Automatiseren met klanten door middel van EDI systeem en Data Feed Management Solution.</li>
-          <li class="list-group-item">De nieuwe werknemers toegang geven tot de gebouwen door middel van biometrisch systeem.</li>
-          <li class="list-group-item">Het beheren van de eerste lijn support: mails en telefoons beantwoorden en doorgeven aan de juiste persoon.</li>
-          <li class="list-group-item">Doorgeven van nieuwe verzoeken door middel van een ticket systeem (Jira).</li>
-        </ul>
+  <div class="container mt-5">
+    <!-- Werkervaring -->
+    <section id="werkervaring" class="mb-5">
+      <h2 class="section-title text-uppercase">Werkervaring</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://be.hama.com/het-bedrijf" target="_blank">IT & Technical support (Hama Benelux)</a></h5>
+              <p class="text-muted small">jan. 2023 - feb. 2023</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">Nieuwe computers installeren en configureren.</li>
+                <li class="list-group-item bg-transparent">Nieuwe gebruikers aanmaken in het systeem.</li>
+                <li class="list-group-item bg-transparent">Ticket systeem beheer (Jira).</li>
+                <li class="list-group-item bg-transparent">EDI systeem & Data Feed Management.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100" style="border-top-color: #778DA9;">
+            <div class="card-body">
+              <h5 class="card-title">Manager "Eigenaar" (Modelina Jeansfabriek)</h5>
+              <p class="text-muted small">okt. 1989 - mrt. 2015</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">Business owner - Jeans factory (30+ medewerkers).</li>
+                <li class="list-group-item bg-transparent">Klantendossiers & klantencontact.</li>
+                <li class="list-group-item bg-transparent">Administratieve taken & boekhouding.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card" style="background-color: #E0E1DD;">
-      <div class="card-body">
-        <h5 class="card-title py-2 px-2"><a href="modellina.html" target="_blank" style="color: #3A3B3C;">Manager "Eigenaar" (Modelina Jeansfabriek - okt. 1989 - mrt. 2015)</a>
-        </h5>
-        <ul class="list-group">
-          <li class="list-group-item">Production and distribution of jeans (Business owner - Jeans factory)</li>
-          <li class="list-group-item">Meer dan 20 jaar succes en ervaring in ondernemen. Leiden van een bedrijf met 30
-            medewerkers en bepalen en uitvoeren.</li>
-          <li class="list-group-item">Inkopen van stoffen en denim. Prijsonderhandelingen met verkooppunten van de
-            kledij in Syrië en Libanon.</li>
-          <li class="list-group-item">Verantwoordelijke van alle klantendossiers en klantencontact.</li>
-          <li class="list-group-item">Administratieve taken: facturatie, contracten afsluiten, loonadministratie van de
-            werknemers, boekhouding.</li>
-        </ul>
+    </section>
+
+    <!-- Opleidingen -->
+    <section id="opleidingen" class="mb-5">
+      <h2 class="section-title text-uppercase">Opleidingen</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">IT Systeembeheerder (Cevora/VDAB)</a></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">Cisco CCNA 1 & 2 (Routing & Switching).</li>
+                <li class="list-group-item bg-transparent">Windows Server & Active Directory.</li>
+                <li class="list-group-item bg-transparent">Virtualisatie: VMware / VirtualBox.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">Webontwikkelaar (HackYourFuture)</a></h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent">HTML, CSS, JavaScript, Bootstrap.</li>
+                <li class="list-group-item bg-transparent">Git, GitHub, Command-line.</li>
+                <li class="list-group-item bg-transparent">Algorithm & problem solving.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="py-3 px-3" id="opleidingen">
-    <h1>Opleidingen</h1>
-  </div>
-
-  <div class="card-group">
-    <div class="card" style="background-color: #778DA9;">
-      <div class="card-body">
-        <h5 class="card-title py-2 px-2"><a href="https://www.cevora.be/nl/opleidingen/per-thema-werknemers/it" target="_blank"
-            style="color: #3A3B3C;">IT Systeembeheerder (Cevora, VDAB, Multimedi - feb. 2022 - sep. 2022)</a></h5>
-        <ul class="list-group">
-          <li class="list-group-item">•	Cisco CCNA 1 & 2 (Routing & Switching).
-          </li>
-          <li class="list-group-item">•	Virtualisatie: VMware / VirtualBox en PC-beheer.
-          </li>
-          <li class="list-group-item">•	ITIL Framework voor IT-ondersteuning.</li>
-          <li class="list-group-item">•	Windows Server en Active Directory installatie & beheer.</li>
-        </ul>
+    <!-- Profile & Contact -->
+    <div class="row">
+      <div class="col-md-8" id="profiel">
+        <h2 class="section-title text-uppercase">Profiel</h2>
+        <div class="card bg-white p-3">
+          <p class="card-text">ICT-professional met een sterke achtergrond in IT support, hardware-refurbishment en systeembeheer. Ervaring met OS deployment, PowerShell-automatisering en veilig datawissen.</p>
+          <p class="fw-bold text-primary">📍 Beschikbaar regio Aalst / Oost-Vlaanderen.</p>
+        </div>
       </div>
-    </div>
-    <div class="card" style="background-color: #778DA9;">
-      <div class="card-body">
-        <h5 class="card-title py-2 px-2"><a href="https://www.hackyourfuture.be/" target="_blank"
-            style="color: #3A3B3C;">Webontwikkelaar (HackYourFuture Belgium - mrt. 2019 - okt. 2019)</a>
-        </h5>
-        <ul class="list-group">
-          <li class="list-group-item">HTML, CSS, JavaScript, Bootstrap.</li>
-          <li class="list-group-item">Git, GitHub, Command-line interface.</li>
-          <li class="list-group-item">Programmatielogica, SQL, Gegevensanalyse.</li>
-          <li class="list-group-item">Algorithm and problem solving.</li>
-          <li class="list-group-item">C++, Java, PHP, Python.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="py-3 px-3" id="profiel">
-        <h1>Profiel</h1>
-      </div>
-      <div class="card" style="background-color: #B2DFDB;">
-        <div class="card-body">
-          <h6></h6>
-          <h6 class="card-title py-1">ICT-professional met een sterke achtergrond in IT support, hardware-refurbishment en systeembeheer. Ervaring met OS deployment (Windows 11, ChromeOS Flex, Zorin OS), PowerShell-automatisering en veilig datawissen.
-
-Aangevuld met een opleiding in netwerk- en systeembeheer (Cisco CCNA, VMware, Active Directory, Windows Server) en een achtergrond in full stack webontwikkeling. 
-
-Sterk in probleemoplossing, zelfstandig werken en snel inspelen op technische uitdagingen.
-
-📍 Beschikbaar voor een nieuwe uitdaging als IT Support Specialist, Helpdesk Medewerker of Systeembeheerder in de regio Aalst / Oost-Vlaanderen.
-          </h6>
+      <div class="col-md-4" id="contact">
+        <h2 class="section-title text-uppercase">Contact</h2>
+        <div class="card bg-dark text-white p-3">
+          <p class="mb-1">📍 Lede, Oost-Vlaanderen</p>
+          <p class="mb-1">📞 0466 08 23 23</p>
+          <p class="mb-1">📧 yousef.katat@gmail.com</p>
+          <a href="https://linkedin.com/in/yousef-katat/" class="btn btn-outline-light btn-sm mt-2">LinkedIn Profiel</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="py-3 px-3" id="contact">
-        <h1>Contact informatie</h1>
-      </div>
-      <div class="card" style="background-color: #B2DFDB;">
-        <div class="card-body">
-          <h6 class="card-title">Lede, Oost-Vlaanderen</h6>
-          <h6 class="card-title">Telefoonnummer: 0466 08 23 23</h6>
-          <h6 class="card-title">E-mailadres: yousef.katat@gmail.com</h6>
-          <h6 class="card-title"><span>Linkedin-profiel: </span><a href="https://www.linkedin.com/in/yousef-katat/"
-              target="_blank" style="color: #3A3B3C;">https://www.linkedin.com/in/yousef-katat/</a></h6>
-        </div>
-      </div>
+
+    <div class="text-center py-5">
+      <a href="files/CV_Yousef_Katat.pdf" class="btn btn-primary btn-lg shadow">Download Full CV (PDF)</a>
     </div>
   </div>
 
-  <div class="py-3 px-3">
-    <a href="files/CV_Yousef_Katat.pdf" target="_blank" style="color: #1D1C1A;">De laatste versie van mijn CV</a>
-  </div>
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container"><small>Copyright &copy; Yousef Katat 2026</small></div>
+  </footer>
 
-  <footer class="py-3 px-3"> </footer>
-
-  <!-- Copyright Section-->
-  <div class="copyright py-4 text-center" style="background-color: #BDBDBD;">
-    <div class="container"><small>Copyright &copy; Yousef Katat</small></div>
-  </div>
-
-  <!-- include JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
